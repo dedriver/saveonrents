@@ -1,0 +1,40 @@
+@import url("../assets/stylesheet.css");
+
+.sectionHeder{
+   margin: 0 15% 0 15% ;   
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: auto;
+    justify-content: space-between;
+  }
+
+ .HederLinks ul {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .HederLinks li{
+    margin: 10px;
+ }
+
+ .HederA{
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.6px;
+    text-align: left;
+    color: black;    
+    text-transform: uppercase;
+}
+  
+
+.grenLinks{
+   color:  #01A358;
+   font-family: Cera Pro;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 17.6px;
+   text-align: left;
+   text-transform: uppercase;
+}
