@@ -6,7 +6,10 @@
 
 
 .sectionCreate{
-    margin: 0 15% 0 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 
@@ -17,10 +20,30 @@
 .CreateBLOX{
     margin-top: 100px;
     display: flex;
+    flex-direction: row;
 }
 
-.CreateBLOX div {
-    width: 500%;
+.createRightSection{
+    display: flex;
+    width: 500px;
     height: 700px;
     border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    margin: px;
+}
+
+.Constructor{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 700;
+color: #C4C4C4;
+
+}
+
+.line{
+    border: 1px solid #C4C4C4;
+    width: 500px;
+    height: 0px;
+    margin-top: 10px;
 }

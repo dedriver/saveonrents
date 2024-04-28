@@ -15,7 +15,7 @@ export default function Header() {
     }
 
     return(
-        <header>
+    
             <section className="sectionHeder">
                 <div className="logo"> <img src={hederLogo} alt="hederlogo"/></div>
                 <div className="HederLinks">
@@ -31,6 +31,6 @@ export default function Header() {
                     </ul>
                 </div>
             </section>
-        </header>
+     
     );
 }

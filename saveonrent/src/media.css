@@ -1,0 +1,81 @@
+@media (max-width: 500px)
+{
+    body section{
+        padding: 0;
+    }
+    .sectionHeder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        width: 100%;
+     }
+     
+     .HederLinks ul{
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .HederLinks ul li{
+     margin-left: 20px;
+     margin-top: 10px;
+     }
+     
+     .HederA{
+        color: black;
+        font-family: Cera Pro;
+     font-size: 14px;
+     font-weight: 700;
+     }
+     
+     
+     .grenLinks ,.HederA:hover{
+        color: #01A358;
+        font-family: Cera Pro;
+     font-size: 14px;
+     font-weight: 700;
+     }
+
+     .flagmanSection{
+        display: flex;
+        flex-direction: column;
+        background-color:  #F7F7F7;
+    }
+    
+    .flagmanSection div{
+        margin-top: 50px;
+    }
+    
+    .flagmanText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .flagmanTextMain{
+        font-family: Cera Pro;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .flagmanTextSecond{
+        font-family: Cera Pro;
+        font-size: 8px ;
+        font-weight: 400;
+        line-height: 5px;
+    }
+    
+    .flagmanImg{
+        margin-left: 100px;
+    }
+    
+    .yelow{
+        color: #fdb932;
+    }
+    
+    .pink{
+        color: #fe99c4;
+    }
+
+}
