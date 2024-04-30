@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 
 
@@ -24,13 +23,14 @@
 }
 
 .createRightSection{
+    padding: 0;
     display: flex;
     width: 500px;
     height: 700px;
     border: 1px solid black;
     flex-direction: column;
     align-items: center;
-    margin: px;
+    margin: 40px;
 }
 
 .Constructor{
@@ -42,8 +42,19 @@ color: #C4C4C4;
 }
 
 .line{
-    border: 1px solid #C4C4C4;
+    border: 1px solid #C4C4C4;      
     width: 500px;
     height: 0px;
     margin-top: 10px;
+}
+
+.inputName input{
+    border: 1px solid #01A358;
+    width: 500px;
+height: 50px;
+top: 1213px;
+left: 200px;
+gap: 0px;
+border-radius: 48px     ;
+opacity: 0px;
 }

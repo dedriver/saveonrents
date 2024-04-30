@@ -10,9 +10,9 @@ function App() {
       <Heder/>
       <main>
         <Flagman/>
-        <h3 className='CreateMainSlogan'>Create infographics<br/>
-for free</h3>
-        {/* <Creates/> */}
+       <section> <h3 className='CreateMainSlogan'>Create infographics<br/>
+for free</h3></section>
+         <Creates/> 
       </main>
     </>
   )

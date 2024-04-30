@@ -1,3 +1,12 @@
-body section {
+body section  {
     padding: 0 15% 0 15%;
+}
+
+.CreateMainSlogan{
+    font-family: Cera Pro;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60.34px;
+    text-align: left;
+    text-transform: uppercase;
 }
