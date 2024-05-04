@@ -4,7 +4,7 @@ import LoveL from "./inputFolder/LoveI";
 import MidleL from "./inputFolder/MidleL";
 import BigL from "./inputFolder/BigL";
 import CreateLine from "./CreateLine";
-import RendBtn from "./createBtn/RendButon";
+import RendBtn from "./createBtn/RendButon"
 export default function Creates() {
   const [stateName, setNameState] = useState("name");
   const [stateNames, setNameStates] = useState();
@@ -37,18 +37,20 @@ export default function Creates() {
             <CreateLine index={1} click={handleLine} isActive={activeIndex === 1}/>
           <div className="inputName">
            <div className="rentBtnDiv">
-            <RendBtn className={"rentBtn"} names={"looking for rent"}></RendBtn>
-            <RendBtn className={"landBtn"} names={"landlord"}></RendBtn>
+             <RendBtn className={"RendBtn"} names={"looking for rent"}></RendBtn>
+            <RendBtn className={"RendBtn"} names={"landlord"}></RendBtn> 
             </div> 
             <BigL/>
-            <BigL/> 
-            <MidleL/>
-            <input type="text" className="fat" />
-            <BigL/>
-            <BigL/>
-            <LoveL/>
-            <MidleL/>
-            <button onClick={handleSubmit}>Submit</button>
+            <BigL def={"NAME"}/> 
+            <MidleL def1={"job"} def2={"Age"}/>
+            <input type="text" className="fat" defaultValue={"Additional Info"}/>
+            <BigL def={"Desired areas (max 3)"}/>
+            <BigL def={"City"}/>
+            <LoveL def1={"Budget Min"} def2={"Budget Max"} />
+            <MidleL def1 = {"Bedrooms"} def2={"Bathrooms"}/>
+            <p>
+</p>
+            <button className="SubmitBTN" onClick={handleSubmit}>Submit</button>
           </div>
         </div>
         <div className="createRightSection">
