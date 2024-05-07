@@ -5,26 +5,41 @@ import MidleL from "./inputFolder/MidleL";
 import BigL from "./inputFolder/BigL";
 import CreateLine from "./CreateLine";
 import RendBtn from "./createBtn/RendButon"
+import SheckFurnished from "./createSheck/SheckFurnished";
 export default function Creates() {
-  const [stateName, setNameState] = useState("name");
-  const [stateNames, setNameStates] = useState();
-  const [submittedName, setSubmittedName] = useState();
-  const [submittedNames, setSubmittedNames] = useState();
+  const [stateName, setNameState] = useState("");
+  const [stateJob, setNameJob] = useState();
+  const [stateAge, setNameAge] = useState();
+  const [stateAboutMYself , setAboutMYself] = useState();
+  const [submittedName, setSubmittedName] = useState("Ashley zoe camille");
+  const [submittedJob, setSubmittedJob] = useState('Smm manager');
+  const [submittedAge, setSubmittedAge] = useState('23');
+  const [submittedAboutMYself, setSubmittedAboutMYself ] = useState();
   const [activeIndex , setActiveIndex] = useState(false);
     function handleLine(index){
         setActiveIndex(index)
     }
   function handleName(event) {
     setNameState(event.target.value);
+  } 
+
+  function handleAboutMYself(event){
+    setAboutMYself(event.target.value);
   }
 
-  function handleNames(event) {
-    setNameStates(event.target.value);
+  function handleAge(event) {
+    setNameAge(event.target.value);
+  }
+
+  function handleJob(event) {
+    setNameJob(event.target.value);
   }
 
   function handleSubmit() {
     setSubmittedName(stateName);
-    setSubmittedNames(stateNames);
+    setSubmittedJob(stateJob);
+    setSubmittedAge(stateAge);
+    setSubmittedAboutMYself(stateAboutMYself);
   }
 
 
@@ -41,22 +56,40 @@ export default function Creates() {
             <RendBtn className={"RendBtn"} names={"landlord"}></RendBtn> 
             </div> 
             <BigL/>
-            <BigL def={"NAME"}/> 
-            <MidleL def1={"job"} def2={"Age"}/>
-            <input type="text" className="fat" defaultValue={"Additional Info"}/>
+            <BigL def={"NAME"}  change={handleName}/> 
+            <MidleL def1={"job"} change1={handleJob} change2 = {handleAge}def2={"Age"}/>
+            <input type="text" className="fat" onChange={handleAboutMYself} defaultValue={"Additional Info"}/>
             <BigL def={"Desired areas (max 3)"}/>
             <BigL def={"City"}/>
             <LoveL def1={"Budget Min"} def2={"Budget Max"} />
             <MidleL def1 = {"Bedrooms"} def2={"Bathrooms"}/>
+            <SheckFurnished/>
             <p>
 </p>
             <button className="SubmitBTN" onClick={handleSubmit}>Submit</button>
           </div>
         </div>
-        <div className="createRightSection">
+        <div  className="createLeftSection">
         <CreateLine index={2} click={handleLine} isActive={activeIndex === 2}/>
-          <p>name : {submittedName}</p>
-          <p>number : {submittedNames}</p>
+          <div className="LeftSection" >
+            <div className="NameJobAge">
+              <div className="ava"><img src="" alt="img" /></div>
+              <div className="pib">
+              <p className="namesPart">{submittedName}</p>
+              <p className="jobPart">job: <span>{submittedJob}</span></p>
+              <p className="agePart">ahe : {submittedAge}</p>
+              </div>
+            </div>
+            <div className="loking">
+            looking for an apartment<br/>
+for rent in los angeles
+            </div>
+            <div className="aboutmy">
+              about myself:
+            </div>
+            <div className="aboytmytext"></div>
+                {submittedAboutMYself}
+          </div>
         </div>
       </div>
     </section>

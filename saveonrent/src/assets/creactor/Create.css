@@ -206,3 +206,131 @@ color: white;
 border: 1px solid #01A358;
 margin-left: 5px;
 }
+
+
+
+.createLeftSection{
+    padding: 0;
+    display: flex;
+    width: 500px;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+.pib{
+    margin-left: 20px;
+}
+.LeftSection{
+    background-color:  #F7F7F7;
+    border-radius: 30px;
+    width: 500px;
+    height: auto;
+    padding: 40px;
+    margin-top: 100px;
+    border: 1px solid black;
+}
+
+.ava{
+    width: 174px;
+    height: 174px;
+    border: 1px solid black ;
+    border-radius: 100%;
+}   
+
+.NameJobAge{
+    display: flex;
+}
+
+.namesPart{
+    margin-bottom: 20px;
+    font-family: Cera Pro;
+font-size: 28px;
+font-weight: 700;
+line-height: 35.2px;
+text-align: left;
+
+}
+.pib{
+    margin-top: 30px;
+}
+.jobPart{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.6px;
+text-align: left;
+color: black;
+}
+
+.jobPart span{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 700;
+line-height: 17.6px;
+text-align: left;
+
+}
+
+.agePart{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.6px;
+text-align: left;
+color: black;
+}
+
+.loking{
+    font-family: Cera Pro;
+font-size: 28px;
+font-weight: 400;
+line-height: 35.2px;
+text-align: left;
+color: black;
+text-transform: uppercase;
+margin-top: 50px;
+}
+
+.aboutmy{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.6px;
+text-align: left;
+text-transform: uppercase;
+margin-top: 50px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF8A00;
+    border-radius: 100%;
+    outline: none;
+    transition: 0.5s;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF8A00; 
+}
+
+
+input[type="checkbox"]::before {
+    content: "✔"; 
+    font-size: 16px;
+    color: transparent;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked::before {
+    color: #fff; /* Колір галочки */
+}
