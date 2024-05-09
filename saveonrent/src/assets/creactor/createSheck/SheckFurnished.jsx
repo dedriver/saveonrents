@@ -1,5 +1,5 @@
-import "../Create.css"
+import "./Sheck.css"
 
-export default function SheckFurnished(){
-    return <input type="checkbox" name="age" className="rasr"></input>
+export default function SheckFurnished({name , chil , onChange  ,checked}){
+    return ( <div className="checkbox"><input type="checkbox" onChange={onChange} checked={checked} name={name} className="rasr"/><p className="shecktext">{chil}</p></div>);
 }

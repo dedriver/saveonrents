@@ -301,36 +301,3 @@ text-align: left;
 text-transform: uppercase;
 margin-top: 50px;
 }
-
-input[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #FF8A00;
-    border-radius: 100%;
-    outline: none;
-    transition: 0.5s;
-    position: relative;
-}
-
-input[type="checkbox"]:checked {
-    background-color: #FF8A00; 
-}
-
-
-input[type="checkbox"]::before {
-    content: "✔"; 
-    font-size: 16px;
-    color: transparent;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
-}
-
-input[type="checkbox"]:checked::before {
-    color: #fff; /* Колір галочки */
-}
