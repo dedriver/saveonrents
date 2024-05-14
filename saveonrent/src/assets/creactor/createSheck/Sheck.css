@@ -9,21 +9,99 @@ input[type="checkbox"] {
     outline: none;
     transition: 0.5s;
     position: relative;
+
 }
 
-input[type = "checkbox"]:hover {
-    border: 1px solid #FF8A00;
+.pinks[type = "checkbox"]:hover {
+    border: 1px solid #FE99C4;    ;
 }
 
-input[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
-    border: 1px solid #FF8A00;
+.pinks[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #FE99C4    ;
 }
 
 
-input[type="checkbox"]:checked {
-    background-color: #FF8A00; 
+.pinks[type="checkbox"]:checked {
+    background-color: #FE99C4    ; 
 }
 
+
+.grens[type = "checkbox"]:hover {
+    border: 1px solid #01A358;    ;
+}
+
+.grens[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #01A358    ;
+}
+
+
+.blus[type="checkbox"]:checked {
+    background-color: #006DBA
+    ; 
+}
+
+.blus[type = "checkbox"]:hover {
+    border: 1px solid #006DBA
+    ;
+}#FF8A00
+
+.orangs[type = "checkbox"]:hover {
+    border: 1px solid #FF8A00;    
+}
+
+.orangs[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #FF8A00   ;
+}
+
+
+.orangs[type="checkbox"]:checked {
+    background-color: #FF8A00   ; 
+}
+
+.blus[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #006DBA
+    ;
+}
+
+
+.grens[type="checkbox"]:checked {
+    background-color: #01A358   ; 
+}
+
+.yelows[type = "checkbox"]:hover {
+    border: 1px solid #FDB932
+    ;    
+}
+
+.yelows[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #FDB932
+    ;
+}
+
+
+.yelows[type="checkbox"]:checked {
+    background-color: #FDB932
+    ; 
+}
+
+.hards[type = "checkbox"]:hover {
+    border: 1px solid #FF5F01
+
+    ;    
+}
+
+.hards[type = "checkbox"]:hover[type="checkbox"]:checked  , input[type="checkbox"]:checked:hover{
+    border: 1px solid #FF5F01
+
+    ;
+}
+
+
+.hards[type="checkbox"]:checked {
+    background-color: #FF5F01
+
+    ; 
+}
 
 input[type="checkbox"]::before {
     content: "✔"; 
@@ -54,6 +132,9 @@ input[type="checkbox"]:checked::before {
 
 .shecktext{
     margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;     
+    white-space: nowrap;
+  
 }    
 
 .checkbox{

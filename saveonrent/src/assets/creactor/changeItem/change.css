@@ -1,6 +1,24 @@
-.changeBox{
-    width: 95px;
-height: 32px;
-border-radius: 48px ;
-background-color: #01A358;
+.changeBox {
+    width: max-content;
+    max-height: 32px;
+    height: auto;
+    padding: 10px;
+    border-radius: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.changeText {
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.6px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }

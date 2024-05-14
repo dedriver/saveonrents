@@ -86,13 +86,51 @@ export default function Creates() {
             <LoveL def1={"Budget Min"} def2={"Budget Max"} />
             <MidleL def1={"Bedrooms"} def2={"Bathrooms"} />
             <div class="parent">
-                <SheckFurnished chil={"Furnished"} checked={stateChange.state1} name={"state1"} onChange={handleClick}/>
-                <SheckFurnished chil={"Pet Friendly"} checked={stateChange.state2} name={"state2"} onChange={handleClick}/> 
-                <SheckFurnished chil={"Public Transportation"} checked={stateChange.state3} name={"state3"} onChange={handleClick}/>
-                <SheckFurnished chil={"Parking"} checked={stateChange.state4} name={"state4"} onChange={handleClick}/>
-                <SheckFurnished chil={"Washer dryer"} checked={stateChange.state5} name={"state5"} onChange={handleClick}/>
-                <SheckFurnished chil  ={"Gym"} checked={stateChange.state6} name={"state6"} onChange={handleClick} />
+              <SheckFurnished
+              inputNames={"orangs"}
+                chil={"Furnished"}
+                checked={stateChange.state1}
+                name={"state1"}
+                onChange={handleClick}
+              />
+              <SheckFurnished
+              inputNames={"yelows"}
+                chil={"Pet Friendly"}
+                checked={stateChange.state2}
+                name={"state2"}
+                onChange={handleClick}
+              />
+              <SheckFurnished
+               inputNames={"hards"}
+                chil={"Public Transportation"}
+                checked={stateChange.state3}
+                name={"state3"}
+                onChange={handleClick}
+              />
+              <SheckFurnished
+                inputNames={"grens"}
+                chil={"Parking"}
+                checked={stateChange.state4}
+                name={"state4"}
+                onChange={handleClick}
+              />
+              <SheckFurnished
+                chil={"Washer dryer"}
+                checked={stateChange.state5}
+                name={"state5"}
+                onChange={handleClick}
+                inputNames={"pinks"}
+              />
+              <SheckFurnished
+  inputNames={"blus"}
+  chil={"Gym"}
+  checked={stateChange.state6}
+  name={"state6"}
+  onChange={handleClick}
+/>
             </div>
+            <BigL />
+            <BigL />
             <button className="SubmitBTN" onClick={handleSubmit}>
               Submit
             </button>
@@ -123,12 +161,41 @@ export default function Creates() {
             <div className="aboutmy">about myself:</div>
             <div className="aboytmytext"></div>
             {submittedAboutMYself}
-            {stateChange.state1 ?  <Change/> : undefined}
-            {stateChange.state2 ?  <Change/> : undefined}
-            {stateChange.state3 ?  <Change/> : undefined}
-            {stateChange.state4 ?  <Change/> : undefined}
-            {stateChange.state5 ?  <Change/> : undefined}
-            {stateChange.state6 ?  <Change/> : undefined}
+            <div className="ChangeItem">
+              {stateChange.state1 ? (
+                <Change
+                  colors={{ backgroundColor: "#FF8A00" }}
+                  name={"furnished"}
+                />
+              ) : undefined}
+              {stateChange.state2 ? (
+                <Change
+                  colors={{ backgroundColor: " #FDB932" }}
+                  name={"Pet Friendly"}
+                />
+              ) : undefined}
+              {stateChange.state3 ? (
+                <Change
+                  colors={{ backgroundColor: " #FF5F01" }}
+                  name={"public transportation"}
+                />
+              ) : undefined}
+              {stateChange.state4 ? (
+                <Change
+                  colors={{ backgroundColor: " #01A358" }}
+                  name={"parking"}
+                />
+              ) : undefined}
+              {stateChange.state5 ? (
+                <Change
+                  colors={{ backgroundColor: "#FE99C4" }}
+                  name={"washer dryer"}
+                />
+              ) : undefined}
+              {stateChange.state6 ? (
+                <Change colors={{ backgroundColor: "#006DBA" }} name={"gym"} />
+              ) : undefined}
+            </div>
           </div>
         </div>
       </div>
