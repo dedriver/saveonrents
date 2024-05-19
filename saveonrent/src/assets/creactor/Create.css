@@ -226,9 +226,10 @@ margin-left: 5px;
     border-radius: 30px;
     width: 500px;
     height: auto;
-    padding: 40px;
+    padding: 40px ;
     margin-top: 100px;
     border: 1px solid black;
+
 }
 
 .ava{
@@ -258,8 +259,6 @@ text-align: left;
     font-family: Cera Pro;
 font-size: 14px;
 font-weight: 400;
-line-height: 17.6px;
-text-align: left;
 color: black;
 }
 
@@ -276,8 +275,6 @@ text-align: left;
     font-family: Cera Pro;
 font-size: 14px;
 font-weight: 400;
-line-height: 17.6px;
-text-align: left;
 color: black;
 }
 
@@ -292,6 +289,15 @@ text-transform: uppercase;
 margin-top: 50px;
 }
 
+.aboytmytext{
+margin-top: 15px;
+white-space: normal; 
+word-wrap: break-word; 
+max-width: 100%;
+font-family: Cera Pro;
+font-size: 14px;
+font-weight: 400;
+}
 .aboutmy{
     font-family: Cera Pro;
 font-size: 14px;
@@ -300,4 +306,78 @@ line-height: 17.6px;
 text-align: left;
 text-transform: uppercase;
 margin-top: 50px;
+}
+
+.areaName{
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-weight: 400; 
+    text-transform: uppercase; 
+    margin-right: 80px;
+}
+
+.areaText{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 700;
+}
+
+.Area-budget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.Area-budget *{
+    margin-top: 20px
+}
+.Citu{
+    margin-top: 40px;
+}
+
+.Citu * {
+    margin-top: 20px;
+}
+
+.CituName{
+    font-family: Cera Pro;
+    font-size: 14px;
+    font-weight: 400; 
+    text-transform: uppercase; 
+}
+
+.CituText{
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 700;
+}
+
+.phones_mail_madeWith{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Cera Pro;
+font-size: 14px;
+font-weight: 400;
+margin-top: 40px;
+text-transform: uppercase;
+}
+
+.madeLine{
+    width: 3px;
+    height: 28px;
+    background-color: #FDB932;
+    margin-right: 10px;
+}
+
+.madeWith{
+    display: flex;
+}
+
+.madeText *{
+    padding-bottom: 5px;
+}
+
+.With{
+    font-weight: 700 ;
 }
