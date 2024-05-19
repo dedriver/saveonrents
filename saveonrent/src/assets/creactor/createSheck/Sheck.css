@@ -140,5 +140,5 @@ input[type="checkbox"]:checked::before {
 .checkbox{
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
+

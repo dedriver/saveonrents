@@ -3,6 +3,7 @@ import './reset.css'
 import Heder from './heder/Heder.jsx'
 import Flagman from './flagman/Flagman.jsx'
 import Creates from './assets/creactor/Creates.jsx'
+import Foter from './fotter/Foter.jsx'
 import './media.css'
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
 for free</h3></section>
          <Creates/> 
       </main>
+          <Foter />
+     <p>das</p>
     </>
   )
 }
