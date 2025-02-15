@@ -21,4 +21,4 @@ for free</h3></section>
   )
 }
 
-export default App
+export default App {*/test/*}
